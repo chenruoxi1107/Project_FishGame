@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget #centralwidget{
+    border-image: url(:/images/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj.jpg);
+    padding: 0px;
+    margin: 0px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-101</x>
+      <y>-91</y>
+      <width>1261</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget
+{
+url(:/images/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj_2.jpg)
+}</string>
+    </property>
+    <widget class="QWidget" name="p0">
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>650</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#p0 {
+    border-image: url(:/images/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj.jpg);
+
+}</string>
+     </property>
+     <widget class="QPushButton" name="introduction">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>530</y>
+        <width>82</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #ffff7f;        /* 背景色 */
+    color: black;                      /* 文字颜色 */
+    border: none;                      /* 边框 */
+    border-radius: 8px;               /* 圆角 */
+    font-size: 12px;                  /* 字体大小 */
+    font-weight: bold;                /* 字体粗细 */
+    padding: 8px 16px;                /* 内边距 */
+    min-width: 50px;                 /* 最小宽度 */
+    min-height: 20px;                 /* 最小高度 */
+}
+
+QPushButton:hover {
+    background-color: #a2a251;
+}
+
+QPushButton:pressed
+{
+background-color:#cfcf4f;
+}</string>
+      </property>
+      <property name="text">
+       <string>游戏简介</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="start">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>440</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #ffff7f;        /* 背景色 */
+    color: black;                      /* 文字颜色 */
+    border: none;                      /* 边框 */
+    border-radius: 8px;               /* 圆角 */
+    font-size: 24px;                  /* 字体大小 */
+    font-weight: bold;                /* 字体粗细 */
+    padding: 8px 16px;                /* 内边距 */
+    min-width: 100px;                 /* 最小宽度 */
+    min-height: 35px;                 /* 最小高度 */
+}
+
+QPushButton:hover {
+    background-color: #a2a251;
+}
+
+QPushButton:pressed
+{
+background-color:#cfcf4f;
+}</string>
+      </property>
+      <property name="text">
+       <string>开始游戏</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>24</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="p1">
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>650</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#p1 {
+    border-image: url(:/images/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj_2.jpg);
+}</string>
+     </property>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>-60</x>
+        <y>-10</y>
+        <width>1061</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView {
+    background: transparent;
+    border: none;
+}</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

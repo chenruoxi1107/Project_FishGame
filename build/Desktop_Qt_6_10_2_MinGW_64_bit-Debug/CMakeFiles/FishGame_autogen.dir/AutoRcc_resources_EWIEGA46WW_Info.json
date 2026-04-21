@@ -1,0 +1,32 @@
+{
+	"BUILD_DIR" : "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Qt Online/FishGame",
+	"CMAKE_SOURCE_DIR" : "C:/Qt Online/FishGame",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj.jpg",
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/RedFish.png",
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/BlueFish.png",
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/OrangeFish.png",
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GreenFish.png",
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/PurpleFish.png",
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/YellowFish.png",
+		"C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj_2.jpg"
+	],
+	"LOCK_FILE" : "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/FishGame_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.10.2/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/FishGame_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Qt Online/FishGame/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

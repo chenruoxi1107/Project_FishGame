@@ -1,0 +1,26 @@
+# ninja log v6
+295	546	7982751365967026	FishGame_autogen/EWIEGA46WW/qrc_resources.cpp	895fc12a6d6db3a9
+14	77	7983751990159332	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+99	1184	7982750051862702	build.ninja	dace241bad93b9be
+103	242	7982863814600685	FishGame_autogen/timestamp	d463201e88f556c4
+103	242	7982863814600685	FishGame_autogen/mocs_compilation.cpp	d463201e88f556c4
+939	3795	7982721303189499	CMakeFiles/FishGame.dir/main.cpp.obj	9d8a2d359c2b3136
+103	242	7982863814600685	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/timestamp	d463201e88f556c4
+295	546	7982751365967026	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/EWIEGA46WW/qrc_resources.cpp	895fc12a6d6db3a9
+103	242	7982863814600685	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/mocs_compilation.cpp	d463201e88f556c4
+245	2174	7982863816022297	CMakeFiles/FishGame.dir/introdialog.cpp.obj	5b6e743a6dbfce41
+553	7111	7982751366165302	CMakeFiles/FishGame.dir/FishGame_autogen/EWIEGA46WW/qrc_resources.cpp.obj	466bedd0950fee99
+934	3808	7982721303132606	CMakeFiles/FishGame.dir/FishGame_autogen/mocs_compilation.cpp.obj	a13520760dcccb92
+242	2547	7982863815984196	CMakeFiles/FishGame.dir/mainwindow.cpp.obj	452f205b820790c5
+2547	2868	7982863839033198	FishGame.exe	505eb57e2db0520e
+267	1946	7958768156351760	CMakeFiles/FishGame.dir/gamewidget.cpp.obj	bd98cb1edf4eb792
+275	1868	7982754454469471	CMakeFiles/FishGame.dir/fishitem.cpp.obj	a4b9a159b89db70
+248	2350	7982863816050182	CMakeFiles/FishGame.dir/gamescene.cpp.obj	58fd0e6fa1a1f7fe
+15	84	7983752036127532	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+13	79	7983752079156683	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+12	78	7983752120458719	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+13	80	7983752181155179	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+15	79	7983752289230494	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+19	84	7983752546019126	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+21	89	7983752614237114	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929
+59	140	7984336117098673	C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	e89febb6ad1ca929

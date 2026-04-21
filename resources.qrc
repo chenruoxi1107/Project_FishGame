@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj.jpg</file>
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/ocean_bj_2.jpg</file>
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/BlueFish.png</file>
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/GreenFish.png</file>
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/OrangeFish.png</file>
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/PurpleFish.png</file>
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/RedFish.png</file>
+        <file>build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/YellowFish.png</file>
+    </qresource>
+</RCC>
