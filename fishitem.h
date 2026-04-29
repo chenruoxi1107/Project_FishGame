@@ -14,6 +14,7 @@ public:
     void setSize(int size);
     int getSize() const { return m_size; }
     int getType() const { return m_type; }
+    void setFlipped(bool flipped);
 
 private:
     qreal m_vx, m_vy;
