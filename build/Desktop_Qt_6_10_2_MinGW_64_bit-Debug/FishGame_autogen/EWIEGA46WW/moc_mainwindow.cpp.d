@@ -1,6 +1,7 @@
 C:/Qt\ Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Qt\ Online/FishGame/mainwindow.h \
   C:/Qt\ Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/moc_predefs.h \
   C:/Qt\ Online/FishGame/fishitem.h \
+  C:/Qt\ Online/FishGame/gameresult.h \
   C:/Qt\ Online/FishGame/gamescene.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/QList \
   C:/Qt/6.10.2/mingw_64/include/QtCore/QTimer \
@@ -58,6 +59,7 @@ C:/Qt\ Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autog
   C:/Qt/6.10.2/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.10.2/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qiterator.h \
@@ -130,6 +132,7 @@ C:/Qt\ Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autog
   C:/Qt/6.10.2/mingw_64/include/QtCore/qtversionchecks.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qtypes.h \
+  C:/Qt/6.10.2/mingw_64/include/QtCore/qurl.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qvariant.h \
   C:/Qt/6.10.2/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -153,24 +156,39 @@ C:/Qt\ Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autog
   C:/Qt/6.10.2/mingw_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.10.2/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qpolygon.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.10.2/mingw_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.10.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/QGraphicsScene \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/QVBoxLayout \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qlabel.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayout.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.10.2/mingw_64/include/QtWidgets/qtwidgets-config.h \

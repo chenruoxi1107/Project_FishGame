@@ -43,6 +43,11 @@ template <> constexpr inline auto GameScene::qt_create_metaobjectdata<qt_meta_ta
         "",
         "score",
         "gameOver",
+        "finalSize",
+        "finalScore",
+        "finalExp",
+        "neededExp",
+        "gameWin",
         "updateFrame",
         "spawnFish"
     };
@@ -53,11 +58,17 @@ template <> constexpr inline auto GameScene::qt_create_metaobjectdata<qt_meta_ta
             { QMetaType::Int, 3 },
         }}),
         // Signal 'gameOver'
-        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SignalData<void(int, int, int, int)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 5 }, { QMetaType::Int, 6 }, { QMetaType::Int, 7 }, { QMetaType::Int, 8 },
+        }}),
+        // Signal 'gameWin'
+        QtMocHelpers::SignalData<void(int, int)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 5 }, { QMetaType::Int, 6 },
+        }}),
         // Slot 'updateFrame'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'spawnFish'
-        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -82,16 +93,19 @@ void GameScene::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->scoreChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 1: _t->gameOver(); break;
-        case 2: _t->updateFrame(); break;
-        case 3: _t->spawnFish(); break;
+        case 1: _t->gameOver((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[4]))); break;
+        case 2: _t->gameWin((*reinterpret_cast<std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
+        case 3: _t->updateFrame(); break;
+        case 4: _t->spawnFish(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (GameScene::*)(int )>(_a, &GameScene::scoreChanged, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (GameScene::*)()>(_a, &GameScene::gameOver, 1))
+        if (QtMocHelpers::indexOfMethod<void (GameScene::*)(int , int , int , int )>(_a, &GameScene::gameOver, 1))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (GameScene::*)(int , int )>(_a, &GameScene::gameWin, 2))
             return;
     }
 }
@@ -115,14 +129,14 @@ int GameScene::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }
@@ -134,8 +148,14 @@ void GameScene::scoreChanged(int _t1)
 }
 
 // SIGNAL 1
-void GameScene::gameOver()
+void GameScene::gameOver(int _t1, int _t2, int _t3, int _t4)
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1, _t2, _t3, _t4);
+}
+
+// SIGNAL 2
+void GameScene::gameWin(int _t1, int _t2)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1, _t2);
 }
 QT_WARNING_POP

@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "gamescene.h"
+#include "gameresult.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,14 +21,15 @@ public:
 private slots:
     void on_start_clicked();
     void on_introduction_clicked();
-    //void on_backToMenu_clicked();
-    //void on_scoreChanged(int score);
-    //void on_gameOver();
-    //void on_gameWin();
+    void on_gameOver(int finalSize, int finalScore, int finalExp, int neededExp);
+    void on_gameWin(int finalSize, int finalScore);
+    void on_restartGame();
+    void on_backToMenu();
 
 private:
     Ui::MainWindow *ui;
-    GameScene *m_gameScene;  // ← 确保这一行存在！
+    GameScene *m_gameScene;
+
 };
 
 #endif

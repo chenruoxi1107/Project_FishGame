@@ -44,7 +44,6 @@ void GameScene::initGame()
     }
     m_fishList.clear();
 
-    // 关键：清除玩家鱼的引用，但不删除（因为下次重新创建）
     if (m_playerFish) {
         removeItem(m_playerFish);
         m_playerFish = nullptr;
@@ -147,7 +146,7 @@ void GameScene::updateFrame()
     qreal sceneWidth = sceneRect().width();
     qreal sceneHeight = sceneRect().height();
 
-    // ===== 更新其他鱼的位置 =====
+    // 更新其他鱼的位置
     for (FishItem *fish : std::as_const(m_fishList)) {
         fish->updatePosition();
         QPointF pos = fish->pos();
@@ -206,25 +205,33 @@ void GameScene::checkCollisions()
                 // 玩家更大 → 吃掉
                 toEat.append(fish);
             }
-            else if (fishSize >= m_playerSize) {
+            else if (fishSize > m_playerSize) {
                 // 鱼更大 → 游戏结束
                 toKill = fish;
                 break;
             }
-            // else {
-            //     // 体型相等 → 玩家吃掉鱼（为了游戏体验）
-            //     toEat.append(fish);
-            // }
+            else {
+                // 体型相等，50%概率玩家赢
+                int result = QRandomGenerator::global()->bounded(2);
+                if (result == 0) {
+                    toEat.append(fish);
+                } else {
+                    toKill = fish;
+                    break;
+                }
+            }
         }
     }
 
+    // 游戏失败（碰到比自己大的鱼）
     if (toKill != nullptr) {
-        emit gameOver();
+        emit gameOver(m_playerSize, m_score, m_exp, m_nextExp);
         m_timer->stop();
         m_spawnTimer->stop();
         return;
     }
 
+    // 吃鱼逻辑
     for (FishItem *fish : toEat) {
         int fishSize = fish->getSize();
         m_score += fishSize;
@@ -244,6 +251,14 @@ void GameScene::checkCollisions()
             m_exp = 0;
 
             qDebug() << "升级！当前体型:" << m_playerSize << "下级需要:" << m_nextExp << "条鱼";
+
+            //游戏胜利：达到最大体型
+            if (m_playerSize >= 12) {
+                emit gameWin(m_playerSize, m_score);
+                m_timer->stop();
+                m_spawnTimer->stop();
+                return;
+            }
         }
 
         qDebug() << "吃鱼，经验:" << m_exp << "/" << m_nextExp << "体型:" << m_playerSize;
@@ -255,6 +270,7 @@ void GameScene::checkCollisions()
         updateUI();
     }
 }
+
 
 void GameScene::spawnFish()
 {

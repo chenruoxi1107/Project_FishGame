@@ -342,6 +342,12 @@
 			null
 		],
 		[
+			"C:/Qt Online/FishGame/gameresult.h",
+			"MU",
+			"EWIEGA46WW/moc_gameresult.cpp",
+			null
+		],
+		[
 			"C:/Qt Online/FishGame/gamescene.h",
 			"MU",
 			"EWIEGA46WW/moc_gamescene.cpp",
@@ -432,6 +438,7 @@
 	"SOURCES" : 
 	[
 		[ "C:/Qt Online/FishGame/fishitem.cpp", "MU", null ],
+		[ "C:/Qt Online/FishGame/gameresult.cpp", "MU", null ],
 		[ "C:/Qt Online/FishGame/gamescene.cpp", "MU", null ],
 		[ "C:/Qt Online/FishGame/introdialog.cpp", "MU", null ],
 		[ "C:/Qt Online/FishGame/main.cpp", "MU", null ],

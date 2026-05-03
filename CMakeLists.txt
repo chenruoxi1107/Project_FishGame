@@ -30,6 +30,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         introdialog.h introdialog.cpp introdialog.ui
         fishitem.h fishitem.cpp
         gamescene.h gamescene.cpp
+        gameresult.h gameresult.cpp
 
 
 

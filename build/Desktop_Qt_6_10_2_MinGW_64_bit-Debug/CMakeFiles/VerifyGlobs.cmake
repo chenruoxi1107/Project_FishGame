@@ -42,6 +42,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Qt Online/FishGame/*.cpp")
 set(OLD_GLOB
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/EWIEGA46WW/moc_gameresult.cpp"
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/EWIEGA46WW/moc_gamescene.cpp"
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/EWIEGA46WW/moc_gamewidget.cpp"
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/EWIEGA46WW/moc_introdialog.cpp"
@@ -50,6 +51,7 @@ set(OLD_GLOB
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/EWIEGA46WW/qrc_resources.cpp"
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/mocs_compilation.cpp"
   "C:/Qt Online/FishGame/fishitem.cpp"
+  "C:/Qt Online/FishGame/gameresult.cpp"
   "C:/Qt Online/FishGame/gamescene.cpp"
   "C:/Qt Online/FishGame/introdialog.cpp"
   "C:/Qt Online/FishGame/main.cpp"
@@ -78,6 +80,7 @@ set(OLD_GLOB
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/include/ui_qdialog.h"
   "C:/Qt Online/FishGame/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/FishGame_autogen/moc_predefs.h"
   "C:/Qt Online/FishGame/fishitem.h"
+  "C:/Qt Online/FishGame/gameresult.h"
   "C:/Qt Online/FishGame/gamescene.h"
   "C:/Qt Online/FishGame/introdialog.h"
   "C:/Qt Online/FishGame/mainwindow.h"

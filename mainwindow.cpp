@@ -4,6 +4,7 @@
 #include "introdialog.h"
 #include <QRandomGenerator>
 #include <QMessageBox>
+#include "gameresult.h"
 //#include<QDir>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -30,6 +31,9 @@ MainWindow::MainWindow(QWidget *parent)
     // 连接信号
     connect(ui->start, &QPushButton::clicked, this, &MainWindow::on_start_clicked);
     connect(ui->introduction, &QPushButton::clicked, this, &MainWindow::on_introduction_clicked);
+
+    connect(m_gameScene, &GameScene::gameOver, this, &MainWindow::on_gameOver);
+    connect(m_gameScene, &GameScene::gameWin, this, &MainWindow::on_gameWin);
 
 }
 
@@ -62,4 +66,28 @@ void MainWindow::on_introduction_clicked()
     dialog->exec();
 }
 
+void MainWindow::on_gameOver(int finalSize, int finalScore, int finalExp, int neededExp)
+{
+    GameResult *dialog = new GameResult(false, finalSize, finalScore, finalExp, neededExp, this);
+    connect(dialog, &GameResult::restartGame, this, &MainWindow::on_restartGame);
+    connect(dialog, &GameResult::backToMenu, this, &MainWindow::on_backToMenu);
+    dialog->exec();
+}
 
+void MainWindow::on_gameWin(int finalSize, int finalScore)
+{
+    GameResult *dialog = new GameResult(true, finalSize, finalScore, 0, 0, this);
+    connect(dialog, &GameResult::restartGame, this, &MainWindow::on_restartGame);
+    connect(dialog, &GameResult::backToMenu, this, &MainWindow::on_backToMenu);
+    dialog->exec();
+}
+
+void MainWindow::on_restartGame()
+{
+    on_start_clicked();
+}
+
+void MainWindow::on_backToMenu()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
